@@ -1,3 +1,4 @@
 # learn_repositories
 learn python
-learn_repositories
+изучаем python
+примеры решения задач курса bioinformatic
