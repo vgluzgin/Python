@@ -1,3 +1,4 @@
-# learn_repositories
+# задачи курса бионформатики / Bioinformatics Institute
 learn python
-learn_repositories
+изучаем python
+примеры решения задач курса бионформатики / Bioinformatics Institute
