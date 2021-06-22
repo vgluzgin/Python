@@ -8,6 +8,24 @@
 Затем передаётся количество l строк текста для проверки, после чего l строк текста.
 
 Выведите уникальные "ошибки" в произвольном порядке. Работу производите без учёта регистра.
+
+Sample Input:
+
+4
+champions
+we
+are
+Stepik
+3
+We are the champignons
+We Are The Champions
+Stepic
+
+Sample Output:
+
+stepic
+champignons
+the
 '''
 
 
