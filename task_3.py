@@ -1,12 +1,24 @@
-s2 = []
-res = []
-n = int(input())
-s = [input().lower() for i in range(n)]
+'''
+Простейшая система проверки орфографии может быть основана на использовании списка известных слов.
+Если введённое слово не найдено в этом списке, оно помечается как "ошибка".
 
-vv = int(input())
-s1 = [input().lower().split(' ') for j in range(vv)]
+Попробуем написать подобную систему.
 
-[res.append(i) for row in s1 for i in row if i not in s]
+На вход программе первой строкой передаётся количество d известных нам слов, после чего на d строках указываются эти слова.
+Затем передаётся количество l строк текста для проверки, после чего l строк текста.
+
+Выведите уникальные "ошибки" в произвольном порядке. Работу производите без учёта регистра.
+'''
 
 
-[print(i) for i in set(res)]
+result = []
+d = int(input())
+s = [input().lower() for i in range(d)]
+
+l = int(input())
+s1 = [input().lower().split(' ') for j in range(l)]
+
+[result.append(i) for row in s1 for i in row if i not in s]
+
+
+[print(i) for i in set(result)]
