@@ -46,7 +46,7 @@ s1 = []
 r1 = []
 nnn = ''
 
-with open('f5.txt', encoding='utf-8') as res:
+with open('../f5.txt', encoding='utf-8') as res:
     [s.append(i.split()) for i in res]
     [t.append(i[0]) for i in s]
 
@@ -66,5 +66,5 @@ with open('f5.txt', encoding='utf-8') as res:
         nnn += f'{k}\t{v}\n'
 
 
-with open('file_one.txt', 'w+', encoding='utf-8') as ouf:
+with open('../file_one.txt', 'w+', encoding='utf-8') as ouf:
     ouf.write(nnn)
